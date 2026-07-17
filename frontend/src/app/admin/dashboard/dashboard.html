@@ -1,0 +1,30 @@
+<p>Dashboard Works!</p>
+<h1>Dashboard</h1>
+
+<h2>Library</h2>
+
+<p>Total Books: {{ totalBooks }}</p>
+<p>Total Librarians: {{ totalLibrarians }}</p>
+
+<h2>Books</h2>
+
+<ul>
+  <li *ngFor="let book of books">
+    {{ book }}
+  </li>
+</ul>
+
+<h2>User Details</h2>
+
+<p><strong>Name:</strong> {{ name }}</p>
+<p><strong>Age:</strong> {{ age }}</p>
+<p><strong>Admin:</strong> {{ isAdmin }}</p>
+
+<img [src]="imageUrl" width="200">
+
+<br><br>
+
+<button [disabled]="buttonDisabled">
+    Add Book
+</button>
+
